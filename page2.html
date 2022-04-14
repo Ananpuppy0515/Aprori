@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+h1 {
+font-family: 'Tangerine', serif;
+font-size: 48px;
+}
+body {
+  background-image: url('image.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+      }
+input[type="file"] {
+        position: absolute;
+        z-index: -1;
+        top: 15px;
+        left: 20px;
+        font-size: 17px;
+        color: #b8b8b8;
+      }
+.button-wrap {
+        position: relative;
+}
+.button {
+        display: inline-block;
+        background-color: #1d6355;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        padding: 8px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+}
+.button:hover {
+	background-color: #00ab97;
+ }
+</style>
+<h1> Apriori Algorithm </h1>
+</head>
+<body>
+<form action="http://localhost:5000/locomachine" method="post" enctype="multipart/form-data">
+   <div class="container">
+      <div class="button-wrap">
+        <label class="button" for="file">Upload File</label>
+        <input type="file" id="file" name="file" accept=".csv">
+      </div>
+    </div>
+   </br>
+   </br>
+<div class="button">
+   <input type="submit"/></div>
+</form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+h1 {
+font-family: 'Tangerine', serif;
+font-size: 48px;
+}
+body {
+  background-image: url('image.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<h1> Apriori Algorithm </h1>
+</head>
+<body>
+<form action = "http://localhost:5000/preloaded" method = "post">
+<h2>Click on Button for selecting required Database: </h2>
+<button class="button" name="predata" Value="1000">1000</button>
+<button class="button" name="predata" Value="5000">5000</button></br></br>
+<button class="button" name="predata" Value="20000">20000</button>
+<button class="button" name="predata" Value="75000">75000</button>
+</body>
+</html>

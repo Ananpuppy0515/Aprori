@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color:Violet;
+}
+table, th, td {
+  border: 1px solid black;
+}
+table {
+  border-spacing: 30px;
+}
+th {
+font-wight: bold;
+}
+</style>
+</head>
+<body>
+
+<h2>The Output:</h2>
+</br></br>
+
+<table style="width:100%">
+{% for key in result %}
+
+{% if key == "=>" %}
+	<tr>
+
+{% elif key == "====>" %}
+<td>
+
+{% elif key == "==>" %}
+</td>
+
+{% elif key == "===>" %}
+</tr>
+
+{% else %}
+{{ key }}
+</br>
+
+{% endif %}
+{% endfor %}
+
+</table>
+
+</body>
+</html>
